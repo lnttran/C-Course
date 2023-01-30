@@ -1,4 +1,4 @@
-## Constructor
+## 1. Constructor
 
 **Concept:** A constructor is a **member function** that is automatically called when a class object is created 
 
@@ -65,7 +65,7 @@ A default constructor is a constructor that takes no arguments. Like a regular f
 
 </aside>
 
-## Passing an argument to Constructors
+## 2. Passing an argument to Constructors
 
 **Concept:** A constructor can have parameters and can accept arguments when an object is created
 
