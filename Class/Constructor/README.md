@@ -160,3 +160,84 @@ class Sale
 ```
 
 When the constructor has default arguments for each of its parameters. The constructor can be called with no argument.
+## 7. Destructor
+
+**Concept:** A destructor is a member function that is automatically called when an object is destroyed.
+
+Destructor are member functions with the same name as the class, preceded by a tilde character (~). Destructor perform a shut down performance when an object is destroyed. The common use of destructor is to free memory that was dynamically allocated by the class.
+
+```cpp
+//Specification file for the contact class
+#ifndef CONTACTINFO_H
+#define CONTACTINFO_H
+#include <cstring> //Needed for strlen and strcpy
+
+//ContactInfo class declaration 
+class ContactInfo
+{
+	 private: 
+		char *name; 
+		char *phone; 
+	 public: 
+		//Constructor
+		ContactInfo(char *n, char *p)
+		{ //Allocate just enough memory for the same and phone number.
+				name = new char [strlen(n) + 1];
+				phone = new char [strlen(p) + 1]; //Rather than storing the name and phone number
+        //in char array with a fixed size, the constructor gets a length of the C-string  and dynamically 
+        // allocate just enough memory to hold it. 
+				
+				//Copy the name and phone number to the allocated memory
+				strcpy(name, n);
+				strcpy(phone, p); }
+	
+			//Destructor
+		~ContactInfo()
+		{ delete [] name; 
+			delete [] phone; }
+
+		const char *getNAme() const
+		{ return name; }
+		
+		const char *getPhoneNumber () const 
+		{ return phone; }
+};
+#endif
+
+```
+
+```cpp
+//This program demonstrates a class with a destructor 
+#include <iostream>
+#include "ContactInfo.h"
+using namespace std; 
+
+int main()
+{
+	//DEfine a ContactInfo object with the following data:
+	//Name: Kristen Lee, Phone number: 555-2021
+	ContactInfo entry("Kristen Lee", "555-2021");
+
+	//Display the object's data
+	cout << "Name: " << entry.getName() << endl;
+	cout << "Phone Number: " << entry.getPhoneNumber() << endl; 
+	return 0;
+}
+```
+
+<aside>
+🗒️ Destructor cannot accept arguments, so they never have a parameter list.
+
+</aside>
+
+## 8. Overloading constructor
+
+Concept: A class can have more than one constructor. 
+
+A class can have more than one constructor, as long as their parameters lists are different. 
+
+### Only one default constructor and one destructor.
+
+A class can only have one default constructor. A default constructor is the constructor has no arguments or have a default argument in their parameters. It would be an error to create a constructor that accepts no parameters along with another constructor that has default arguments for all its parameters. 
+
+A class also can only have one destructor.
