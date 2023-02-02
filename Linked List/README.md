@@ -1,7 +1,7 @@
 - Lecture Video
     - Creating the Node of a Single List
         
-        [https://www.youtube.com/watch?v=DneLxrPmmsw](https://www.youtube.com/watch?v=DneLxrPmmsw)
+        [youtube](https://www.youtube.com/watch?v=DneLxrPmmsw)
         
     - 
 
