@@ -258,6 +258,11 @@ The statement above uses `student1` object to create and initialize `student2` o
 **Solution:** Create a copy constructor for the object. It has the same form as other constructors, except it has a reference parameeter of the same class type as the object itself.
 ```cpp
 StudentTestSCore (StudentTestScores &obj)
-{	
+{ studentName = obj.studentName; 
+  numTestScores = obj.numTestScores;
+  testScore = new double[numTestScore]; 
+  for (int i = 0; i < numTestScore; i++)
+     testScore[i] = obj.testScores[i]; 
+}
+```
 
-```cpp
