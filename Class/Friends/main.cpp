@@ -25,15 +25,19 @@ int main()
     cin >> budgetAmount; 
     division[count].addBudget(budgetAmount);
     
-
+    cout << "Enter the budget request for that division's aixiliary office: ";
+    cin >> budgetAmount;
+    auxiOffices[count].addBudget(budgetAmount, division[count]);
+  }
   
   //Diplay the budget requests and the corporate budget 
   cout << fixed << showpoint << setprecision(2); 
   cout << "\nHere are the division budget requests:\n"
-  for ( count = 0; count < NUM_DIVISION; count ++)
+  for ( int count = 0; count < NUM_DIVISION; count ++)
   {
     cout << "\nDivision " << (count + 1) << "\t$"; 
     cout << division[count].getDivisionBudget() << endl;  
+    cout << "Auxiliary Office: \t$" << auxiOffices[count].getDivisionsBudget() << endl << endl;
   }
   cout << "\tTotal Budget Request: \t$ "; 
   cout << division[0].getCorBudget() << endl; 
