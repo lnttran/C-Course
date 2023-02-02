@@ -14,6 +14,7 @@ Concept: Each instance of a class has its own copies of the class’s instance v
 
 </aside>
 
+
 <aside>
 🗒️ A class’s static member functions can be called before any instances of the class are created. This means that a class’s static member functions can access the class’s static member variables before an instances of the class are defined in memory
 
