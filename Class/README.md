@@ -118,7 +118,7 @@ The mutators function can also validate the data is stored in the object’s att
 - A class declarations are stored in their own header files. Called *class specification* file
 - The member function definitions for a class are stored in a separate .cpp file called *class implementation* file. File name usually have the same name as the class.
 
-## 5. Constructor 
+## 5. Constructor and Destructor
 [Constructor](https://github.com/lnttran/C-Course/tree/main/Class/Constructor)
 
 ## 6. Instances and Static Member 
@@ -126,7 +126,7 @@ The mutators function can also validate the data is stored in the object’s att
 
 ## 7.Friends 
 
-## 8.Memberwise Assignment 
+## 8. Memberwise Assignment 
 **Concept:** The = operator may be used to assign on object's data to another object. or to initialize one object with another objectls data. By default, each member of one object is copied to its counterpart in the other object.
 
 ```cpp
