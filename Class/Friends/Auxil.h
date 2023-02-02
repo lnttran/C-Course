@@ -10,13 +10,13 @@ class AuxiliaryOffice
   private: 
     double auxBudget; 
   public: 
-    AuxiliaryOffice()
+    AuxiliaryOffice() //constructor 
     { auxBudget = 0; }
   
     double getDivisionBudget() const 
     { return auxBudget;}
   
-    void addBudget ( double, Budget &);
+    void addBudget ( double, Budget &); //declare in Auxil.cpp
   
 };
 #endif
