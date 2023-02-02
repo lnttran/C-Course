@@ -123,3 +123,16 @@ The mutators function can also validate the data is stored in the object’s att
 
 ## 6. Instances and Static Member 
 [Static Member](https://github.com/lnttran/C-Course/tree/main/Class/Static%20Member)
+
+## 7.Friends 
+
+## 8.Memberwise Assignment 
+**Concept:** The = operator may be used to assign on object's data to another object. or to initialize one object with another objectls data. By default, each member of one object is copied to its counterpart in the other object.
+
+```cpp
+//Define box1
+Rectangle box1(100.0, 50.0);
+
+//Define box2, initialize with box1's values
+Rectangle box2 = box1;
+```
