@@ -49,7 +49,7 @@ newNode →value = num;
 newNode →next = nullptr; 
 ```
 
-![Figure 1: State of the head pointer and the new node ](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/898d53a9-37bc-43c3-82d8-71da330ddc07/Untitled.png)
+![Figure 1: State of the head pointer and the new node ](https://www.notion.so/Linked-List-583fab7885954f028df5ac14c0a2698e#d51866f8497846e1bdf97b933e9a1ede)
 
 Figure 1: State of the head pointer and the new node 
 
