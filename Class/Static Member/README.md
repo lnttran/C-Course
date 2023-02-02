@@ -15,3 +15,8 @@ Concept: Each instance of a class has its own copies of the class’s instance v
 
 🗒️ A class’s static member functions can be called before any instances of the class are created. This means that a class’s static member functions can access the class’s static member variables before an instances of the class are defined in memory
 
+```cpp
+Budget::mainOffice(amount); 
+```
+
+- Calls the static member functions do not use the regular notation of connecting the function name to an object name with the dot operator. Instead static member functions are called by connecting the function name to the class name with the scope resolution operator.
