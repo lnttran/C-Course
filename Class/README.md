@@ -117,3 +117,6 @@ The mutators function can also validate the data is stored in the object’s att
 
 - A class declarations are stored in their own header files. Called *class specification* file
 - The member function definitions for a class are stored in a separate .cpp file called *class implementation* file. File name usually have the same name as the class.
+
+## 5. Constructor 
+[Constructor](https://github.com/lnttran/C-Course/tree/main/Class/Constructor)
