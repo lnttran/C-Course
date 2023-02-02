@@ -244,3 +244,7 @@ A class also can only have one destructor.
 
 ## 9. Copy Constructor 
 **Concept:** A copy contructor is a special constructor that is called whenever a mew bject is created and initialized with another object's data;
+
+Contents of [StudentTestScores.h](https://github.com/lnttran/C-Course/blob/main/Class/Constructor/StudentTestScores.h)
+
+- The following statement creates a StudentTestScores object name `student1`, whose `test `
