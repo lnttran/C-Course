@@ -17,3 +17,25 @@ int main()
   Budget divisions[numDivs];
   AuxiliaryOffice auxOffices[4]; 
   
+  for ( int count = 0; count < NUM_DIVISION; count ++)
+  {
+    double budgetAmount; 
+    cout << "Enter the budget request for division "; 
+    cout << (count + 1 ) << " : "; 
+    cin >> budgetAmount; 
+    division[count].addBudget(budgetAmount);
+    
+
+  
+  //Diplay the budget requests and the corporate budget 
+  cout << fixed << showpoint << setprecision(2); 
+  cout << "\nHere are the division budget requests:\n"
+  for ( count = 0; count < NUM_DIVISION; count ++)
+  {
+    cout << "\nDivision " << (count + 1) << "\t$"; 
+    cout << division[count].getDivisionBudget() << endl;  
+  }
+  cout << "\tTotal Budget Request: \t$ "; 
+  cout << division[0].getCorBudget() << endl; 
+  
+  return 0;
