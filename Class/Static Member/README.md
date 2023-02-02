@@ -9,13 +9,9 @@ Concept: Each instance of a class has its own copies of the class’s instance v
 
 - A function that is a static member of a class cannot access any nonstatic member  in its class
 
-<aside>
+
 🗒️ The lifetime of a class’s static member variable is the lifetime of the program. This means that a class’s static member variables come into existence before any instances of the class are created.
 
-</aside>
 
-
-<aside>
 🗒️ A class’s static member functions can be called before any instances of the class are created. This means that a class’s static member functions can access the class’s static member variables before an instances of the class are defined in memory
 
-</aside>
