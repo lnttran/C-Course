@@ -1,6 +1,4 @@
-- Lecture Video 
-        
-        [Creating the Node of a Single Linked List](https://www.youtube.com/watch?v=DneLxrPmmsw)
+- Lecture Video   [Creating the Node of a Single Linked List](https://www.youtube.com/watch?v=DneLxrPmmsw)
         
 
 ## Introduction to the linked list ADT
