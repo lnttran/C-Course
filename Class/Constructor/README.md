@@ -247,4 +247,17 @@ A class also can only have one destructor.
 
 Contents of [StudentTestScores.h](https://github.com/lnttran/C-Course/blob/main/Class/Constructor/StudentTestScores.h)
 
-- The following statement creates a StudentTestScores object name `student1`, whose `test `
+**Problem:** The following statement creates a StudentTestScores object name `student1`, whose `testScores` member references dynamically allocated memory holding an array of 5 double's 
+```cpp
+StudentTestScore student1("John", 5); 
+
+StudentTestscore student2 = student1;
+```
+The statement above uses `student1` object to create and initialize `student2` object. The constructor of `student2` isn't called. Instead, the memberwise assignment takes place, copying each of the `student1`'s number variables into `student2`. This means that a separate section of memory is not allocated for `student2`'s testScore member. It simply gets a copy of the address stored in `student1`.**Both pointer point to the same address.**
+
+**Solution:** Create a copy constructor for the object. It has the same form as other constructors, except it has a reference parameeter of the same class type as the object itself.
+```cpp
+StudentTestSCore (StudentTestScores &obj)
+{	
+
+```cpp
