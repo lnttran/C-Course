@@ -2,6 +2,7 @@
 #define AUXIL_H
 
 class Budget; //Forward declaration of Budget class
+//This simply tells the compiler that a class named Budget will be declare later in the program.
 
 //Aux class declaration 
 
