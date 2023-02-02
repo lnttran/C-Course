@@ -241,3 +241,6 @@ A class can have more than one constructor, as long as their parameters lists ar
 A class can only have one default constructor. A default constructor is the constructor has no arguments or have a default argument in their parameters. It would be an error to create a constructor that accepts no parameters along with another constructor that has default arguments for all its parameters. 
 
 A class also can only have one destructor.
+
+## 9. Copy Constructor 
+**Concept:** A copy contructor is a special constructor that is called whenever a mew bject is created and initialized with another object's data;
