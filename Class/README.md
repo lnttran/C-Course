@@ -120,3 +120,6 @@ The mutators function can also validate the data is stored in the object’s att
 
 ## 5. Constructor 
 [Constructor](https://github.com/lnttran/C-Course/tree/main/Class/Constructor)
+
+## 6. Instances and Static Member 
+[Static Member](https://github.com/lnttran/C-Course/tree/main/Class/Static%20Member)
