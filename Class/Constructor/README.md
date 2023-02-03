@@ -265,4 +265,20 @@ StudentTestSCore (StudentTestScores &obj)
      testScore[i] = obj.testScores[i]; 
 }
 ```
+The studentObjectScores object that appears on the right side of the = operator is passed as an argument to the copy constructor. `student2`'s testScore member will properly reference its own dynamically allocated memory. There will be no danger of `student1` inadvertently destroying or corrupting `student2`'s data
+<aside>
+🗒️ C++ requires that a copy constructor's parameter be a reference object.
+
+</aside>
+
+The `const` key word ensures that the function cannot change the contents of the parameters. This will prevent you from inadvertently writing code that currupts data.
+```cpp
+StudentTestSCore (const StudentTestScores &obj)
+{ studentName = obj.studentName; 
+  numTestScores = obj.numTestScores;
+  testScore = new double[numTestScore]; 
+  for (int i = 0; i < numTestScore; i++)
+     testScore[i] = obj.testScores[i]; 
+}
+```
 
