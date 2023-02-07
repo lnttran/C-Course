@@ -31,7 +31,7 @@ vector<int> numbers(10,2); //Vector od 10 ints. Each element in numbers is initi
 vector<int> set1(set2); //can initialize a vector with the value in another vector. Set2 will be a copy of set1
 
 vector<int> numbers {10, 12, 13, 40}; //Vector of 4 ints, initialized with the value 10,12, 14, 40.
-
+```
 
 <aside>
 🗒️ The size declaration in vector is enclosed in a paratheses not square braket.
@@ -50,6 +50,7 @@ for ( int i = 0, i < 3, i++)
   
 ```
 ### Using the Range-Base `for` loop with a `vector`
-
+```cpp
+//This 
  
 
