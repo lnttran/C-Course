@@ -87,5 +87,36 @@ You cannot use the [] operator to access a vector element that does not exits. T
 members.push_back(25); //store the value of 25 to the vector that is fulled or does not have size declaration. 
 ```
 
+### DEtermining the Size of a `vector`
+`vector` can report the number of element they contain. Using the `size` member function. 
+```cpp
+numValue = numbers.size();
+//numbers is the vector. numValue is the variable stores the number of element in the vector numbers
 
+voi 
+//numbers is the vector. numValue is the variable stores the number of element in the vector number
+
+void showValue (vector<int> vect)
+{
+  for(int i = 0, i < vect.size(), i++)
+    cout << vect[i] << endl; 
+}
+```
+### Removing Elements from a `vector`
+Using `pop_back` meber function to remove the last element from a vector. 
+```cpp
+collection.pop_back(); 
+```
+### Clearing a `vector`
+Using `clear` member function to completely clear contents of the `vector`.
+```cpp
+numbers.clear(); 
+```
+
+### Detecting an Empty `vector`
+Using `empty` member function to determine of a vector is empty. The function return true if the vector is empty, false if the vector has elements stored in it. 
+```cpp
+if (numberVector.empty())
+  cout << "No values in numberVector."
+```
 
