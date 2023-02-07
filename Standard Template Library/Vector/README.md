@@ -51,6 +51,41 @@ for ( int i = 0, i < 3, i++)
 ```
 ### Using the Range-Base `for` loop with a `vector`
 ```cpp
-//This 
- 
+//This program demontrates the range-based for loop with a vector.
+#include <iostream>
+#include <vector> 
+using namespace std; 
+
+int main()
+{
+  //Defien and initialize a vector.
+  vector<int> numbers(5);
+  
+  for ( int &val : numbers)
+  { cout << "Enter an interger: "; 
+    cin >> val; 
+  }
+  
+  //Display the vector elemets
+  for (int val : numbers)
+    cout << val << endl; 
+  /*
+  Output: 
+  10
+  20
+  30
+  40
+  50
+  */
+  return 0; 
+}
+```
+### Using the push_back Member Function 
+You cannot use the [] operator to access a vector element that does not exits. To store a value in a `vector` does not have a staring size, or that is already full, use the `push_back` member function. The `push_back` member function accepts a value as an argument and sotre that value after the lasr element of the `vector`.
+
+```cpp
+members.push_back(25); //store the value of 25 to the vector that is fulled or does not have size declaration. 
+```
+
+
 
