@@ -40,7 +40,32 @@ int main()
 }
 ```
 
+  
 > The built-in string is simply an array of characters and thus has the liabilitoes of arrays plus a few more. For instance, == dos not correctly co,pare two built-in strings.
 
-hi
+## 4. Library Fucntions for Working with CString
+**Concepts:** The C++ library has numerous functions for handling C-strings. These functions perform various tests and manipulation and required <cstring> hear file be included.
+  
+### The `strlen` Function 
+
+```cpp
+#include <cstring>
+char name[] = "Thomas Edision"; 
+int lenth; 
+length = strlen(name); //returns the length of the string. This function looks for the null terminator to indicate the end of the string. 
+```
+
+### The `strcat` function 
+The `strcat` function accetps two pointers to C-string as its arguments. The functiosn concatenates or appends one string to another. 
+```cpp
+strcat(string1, string2) //copies the contents of string2 to the end of string1
+  
+//The strcat functions does's insert a space, make sure that string1 is large enough to get the copy of string2 + null operator.
+```
+### The `strcpy` function 
+An array cannot be assigned to another with the = operator. Each infividual elemt must be assigned, usually inside a loop. The `strcyp` function can be used to copy one string to another. 
+
+```cpp 
+const int SIZE = 13; 
+ 
 
