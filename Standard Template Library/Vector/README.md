@@ -148,8 +148,9 @@ int main() {
   v2 = v1;
 
   std::cout << "v1: ";
-  for (int x : v1) {
-    std::cout << x << " ";
+  for (int x : v1) //Using range-base for loop 
+  {
+    std::cout << x << " "; 
   }
   std::cout << "\nv2: ";
   for (int x : v2) {
