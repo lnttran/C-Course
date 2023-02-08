@@ -120,6 +120,13 @@ if (numberVector.empty())
   cout << "No values in numberVector."
 ```
 ### Some of the vector Member Functions
-Member Function | Description 
-at(element) | Return the value of the element located at elemnt in the vector EX: x = vect.at(5). This assigned 
+|Member Function | Description |
+| --- | --- |
+|at(element) | Return the value of the element located at elemnt in the vector EX: x = vect.at(5). This assigned the value of the fifth element of the vect to x|
+| clear()| |
+| empty() | |
+| pop_back() | |
+| push_back(value)| |
+| resize(elements, value) | Resize the vector by the elements. Each of the new elements is initialized with the value in `value`.|
+| swap(vector2) | Swaps the contents of the vector with the contents of vector2. EX: `vect1.swap(vect2);` The value of vect1 is swapped with vect2.|
 
