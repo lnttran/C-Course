@@ -66,6 +66,12 @@ strcat(string1, string2) //copies the contents of string2 to the end of string1
 An array cannot be assigned to another with the = operator. Each infividual elemt must be assigned, usually inside a loop. The `strcyp` function can be used to copy one string to another. 
 
 ```cpp 
-const int SIZE = 13; 
- 
+const int SIZE = 13;
+char string1[SIZE]; 
+care string2[SIZE];
+strcpy(string1, string2); //the contents of the second arguemnt are copied to the memory location specified by the first argument, including the null operator. 
+
+maxChars = siseof(string1) - (strlen(string1) + 1);
+
+strcpy
 
