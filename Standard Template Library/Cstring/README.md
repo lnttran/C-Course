@@ -70,8 +70,6 @@ const int SIZE = 13;
 char string1[SIZE]; 
 care string2[SIZE];
 strcpy(string1, string2); //the contents of the second arguemnt are copied to the memory location specified by the first argument, including the null operator. 
-
-maxChars = siseof(string1) - (strlen(string1) + 1);
-
-strcpy
+```
+### The 
 
