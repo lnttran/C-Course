@@ -132,3 +132,31 @@ if (numberVector.empty())
 | resize(elements, value) | Resize the vector by the elements. Each of the new elements is initialized with the value in `value`.|
 | swap(vector2) | Swaps the contents of the vector with the contents of vector2. EX: `vect1.swap(vect2);` The value of vect1 is swapped with vect2.|
 
+## 2. Copying vector 
+**Concepts:** Vectors can be copied using the `=` operator. 
+
+Vector can be copied using assignment operator `=`. The assignment operator will create a deep copy of the vector = meaning that new vector will be created with its own memory allocation, and the elements and values of the original vector will be copied into the vector. 
+```cpp
+#include <vector>
+#include <iostream>
+
+int main() {
+  std::vector<int> v1 {1, 2, 3, 4};
+  std::vector<int> v2;
+
+  // Copy v1 into v2 using the assignment operator
+  v2 = v1;
+
+  std::cout << "v1: ";
+  for (int x : v1) {
+    std::cout << x << " ";
+  }
+  std::cout << "\nv2: ";
+  for (int x : v2) {
+    std::cout << x << " "; // output: v2: 1, 2, 3, 4
+  }
+  std::cout << "\n";
+
+  return 0;
+}
+```
