@@ -119,4 +119,7 @@ Using `empty` member function to determine of a vector is empty. The function re
 if (numberVector.empty())
   cout << "No values in numberVector."
 ```
+### Some of the vector Member Functions
+Member Function | Description 
+at(element) | Return the value of the element located at elemnt in the vector EX: x = vect.at(5). This assigned 
 
