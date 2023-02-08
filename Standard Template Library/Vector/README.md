@@ -1,6 +1,8 @@
 ## 1. Introduction to the STL vector 
 **Cencept:** the STL offers a vector data type, which in many ways, is superior to standard arrays 
 
+> The problem with the built in C++ array is that it does not behave like a first=class object. For instance, built-in arrays cannot be copied with =, a built-in array does not remember how many items it can stored.=, an its indexing operator does not check that index is valid. 
+
 A vector is container that can sotre data. It is like an array in the following way: 
 - A vector holds a sequence of value or elements.
 - A vector stores its elements in contigious memory locations
