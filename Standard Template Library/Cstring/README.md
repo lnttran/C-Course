@@ -155,4 +155,17 @@ int main()
  ### The `c_str` function 
  The c_str function add the null terminator to the end of the array of the string. It will returns a null-terminated char array version of the string. 
  ```cpp
- #include 
+ #include <iostream>
+  #include <string>
+  #include <cstring>
+  using namespace std; 
+  
+  int main()
+  {
+    string str = "Hello, World!";
+    const char* cstr = str.c_str(); 
+    cout << strlen(cstr); //Output = 13, which contains null operator. 
+  
+    return 0; 
+  }
+  
