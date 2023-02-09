@@ -152,3 +152,7 @@ int main()
   |mystring.compare(str)||
   |mystring.clear()||
   
+ ### The `c_str` function 
+ The c_str function add the null terminator to the end of the array of the string. It will returns a null-terminated char array version of the string. 
+ ```cpp
+ #include 
