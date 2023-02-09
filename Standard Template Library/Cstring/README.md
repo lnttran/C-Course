@@ -99,3 +99,18 @@ The `strstr` function searches for a string inside of a string. If the function 
 int strcmp (char *string1, char *string2);
 ```
 - The result zero if the two string are equal in a character-by-character on basis
+- The result is negative if string1 comes before string2 in alphabet order.
+- The result is positive if string2 comes before string1 in alphabet order.
+
+The expression !strcmp(string1, string2) returns true when both strings the same, false when they are different.
+
+## 5. String/Numeric Conversion Function 
+**Concenpt:** the C++ library provides function for converting C-string and string objects to numeric data types and vice versa.
+
+### The `to_string` Function. 
+The `to_string` function convert numberic value to a string object. Required the <string> header file.
+
+### Using Pointers to Pass C-string Argument. 
+
+## 6. More anout the C++ `string` class
+**Concepts: ** Standdard C++ provides a special data types for storing and working with strings.
