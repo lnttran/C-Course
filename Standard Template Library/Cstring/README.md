@@ -71,5 +71,19 @@ char string1[SIZE];
 care string2[SIZE];
 strcpy(string1, string2); //the contents of the second arguemnt are copied to the memory location specified by the first argument, including the null operator. 
 ```
-### The 
+### The `strncat` and `strncpy` Functions 
+The `strncat` and `strncpy` functions takes the third argument specifying the maximum number of character from the second string to append to the first. 
+
+```cpp
+const int SIZE1 = 17; 
+const int SIZE2 = 18; 
+
+char string1[SIZE1] = "Welcome "; 
+char string2[SIZE2] = "to North Caralonia.";
+
+//substruction the size of the array to the length of the string stored in the array pluse 1 or \0
+maxChars = sizeof(string1) - (strlen(string1) + 1); 
+
+strncat(string1, string2, maxChars);
+
 
