@@ -96,4 +96,6 @@ The `strstr` function searches for a string inside of a string. If the function 
 ### The `strcmp` Function
 `strcmp` function takes two C-string as arguments and returns an integer that indicates how the two strings compare to each other.
 ```cpp
-int 
+int strcmp (char *string1, char *string2);
+```
+- The result zero if the two string are equal in a character-by-character on basis
