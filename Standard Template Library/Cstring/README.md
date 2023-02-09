@@ -85,5 +85,15 @@ char string2[SIZE2] = "to North Caralonia.";
 maxChars = sizeof(string1) - (strlen(string1) + 1); 
 
 strncat(string1, string2, maxChars);
-
-
+```
+### The `strstr` Function 
+The `strstr` function searches for a string inside of a string. If the function finds the second string inside the first, it returns the address of the occurance of the second string within the first string. Otherwise, it return nullptr (the address 0)
+```cpp
+  strPtr = strstr(array, "seven"); 
+  //the first argument is the string to be searched.
+  //the second argument is the string for which to look for. 
+```
+### The `strcmp` Function
+`strcmp` function takes two C-string as arguments and returns an integer that indicates how the two strings compare to each other.
+```cpp
+int 
