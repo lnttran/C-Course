@@ -113,4 +113,42 @@ The `to_string` function convert numberic value to a string object. Required the
 ### Using Pointers to Pass C-string Argument. 
 
 ## 6. More anout the C++ `string` class
-**Concepts: ** Standdard C++ provides a special data types for storing and working with strings.
+**Concepts:** Standdard C++ provides a special data types for storing and working with strings.
+| string address; | |
+| string name("william")| |
+| string person1(person2)| |
+| string str(str2, 5)| | |
+| string loneFull('z', 10);| |
+| string firstName(fullName, 0, 7); | |
+
+### Using `string` class Member Function. 
+The `string` class also has member functions. 
+```cpp
+//This program demonstrates a string object's length member function 
+#include <iostream>
+#include <string>
+using namepsace std;
+
+int main()
+{
+  string town; 
+  
+  cout << "Where do you love?"; 
+  cin >> town; 
+  cout << "Your town's name has " << town.length() << "characters." << endl;
+  
+  return 0; 
+}
+```
+  |Member Function Example|Description|
+  |---|---|
+  |mystring.append()| |
+  |mystring.append()| |
+  |mystring.assign()| |
+  |mystring.at(x) | |
+  |mystring.begin()| |
+  |mystring.c_sctr()| |
+  |mystring.capacity()| |
+  |mystring.compare(str)||
+  |mystring.clear()||
+  
