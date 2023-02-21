@@ -83,7 +83,7 @@ int main()
 }
 ```
 ### Using the push_back Member Function 
-You cannot use the [] operator to access a vector element that does not exits. To store a value in a `vector` does not have a staring size, or that is already full, use the `push_back` member function. The `push_back` member function accepts a value as an argument and sotre that value after the lasr element of the `vector`.
+You cannot use the [] operator to access a vector element that does not exits. To store a value in a `vector` does not have a staring size, or that is already full, use the `push_back` member function. The `push_back` member function accepts a value as an argument and store that value after the last element of the `vector`.
 
 ```cpp
 members.push_back(25); //store the value of 25 to the vector that is fulled or does not have size declaration. 
