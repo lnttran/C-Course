@@ -11,3 +11,4 @@ All pointers that do no point to node are set to nullptr.
 
 **The height of the node** in a binary tree is the largest number of edges in a path from  target node to a leaf node.
 **The depth of a node** in a binary tre is the total number of edges from the root node to the target node. 
+**Degree of node** is the number of children, the **degree of tree(arity)** i the max degree if any its nodes. Binary tree has arity <= 2. 
