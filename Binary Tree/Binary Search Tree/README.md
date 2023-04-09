@@ -1,2 +1,3 @@
 ## Binary Search Tree
-** Height :** how long the nodes can go down 
+**Concept:** IN a binary search tree, all item in each left subtree are smaller than the item in the right subtree
+**Height :** how long the nodes can go down 
