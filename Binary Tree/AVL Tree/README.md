@@ -5,3 +5,7 @@
 AVL tree cannot balance itself by default. We have to implemen re-balance funtions to balance the tree after insertion or deletion. 
 
 To maintain the balance in AVL tree, re-balancing is done using ROTATIONS
+** Left-left rotation:** 
+** Right-right rotation: **
+** Left-right rotatio: **
+** Rightleft rotation: **
