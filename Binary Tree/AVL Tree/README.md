@@ -8,4 +8,4 @@ To maintain the balance in AVL tree, re-balancing is done using ROTATIONS
 ** Left-left rotation:** 
 ** Right-right rotation: **
 ** Left-right rotatio: **
-** Rightleft rotation: **
+** Rightleft rotation: ** he
